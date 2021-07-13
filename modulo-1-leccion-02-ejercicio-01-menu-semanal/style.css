@@ -1,0 +1,12 @@
+table {
+  border-style: dashed;
+}
+td {
+  border-style: double;
+}
+tr {
+  border-style: double;
+}
+th {
+  border-style: groove;
+}
