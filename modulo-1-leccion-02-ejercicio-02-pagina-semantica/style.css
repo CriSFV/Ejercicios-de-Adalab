@@ -1,0 +1,11 @@
+body {
+  font-size: 18px;
+  font-family: tahoma;
+  color: rebeccapurple;
+  background-color: mediumpurple;
+  line-height: 1.5;
+}
+
+#otros {
+  list-style-type: none;
+}
