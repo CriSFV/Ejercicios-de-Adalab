@@ -1,0 +1,37 @@
+.container {
+}
+
+.div1 {
+  width: 300px;
+  height: 300px;
+  margin: 40px;
+  padding: 30px;
+  background-color: yellow;
+  position: relative;
+  left: 100px;
+  top: 50px;
+}
+.div2 {
+  width: 300px;
+  height: 300px;
+  margin: 40px;
+  padding: 30px;
+  background-color: red;
+  position: relative;
+  right: 150px;
+  bottom: 320px;
+}
+.div3 {
+  width: 300px;
+  height: 300px;
+  margin: 40px;
+  padding: 30px;
+  background-color: blue;
+  position: relative;
+  left: 180px;
+  bottom: 240px;
+}
+
+.container {
+  border: black solid 2px;
+}

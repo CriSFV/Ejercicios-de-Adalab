@@ -1,0 +1,13 @@
+.container {
+  background-color: cyan;
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 200px;
+  height: 100px;
+  box-sizing: border-box;
+  border: solid 2px red;
+}

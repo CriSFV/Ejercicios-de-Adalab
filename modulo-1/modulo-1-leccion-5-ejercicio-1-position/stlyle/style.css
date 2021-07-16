@@ -1,0 +1,9 @@
+.with-style {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 12px;
+}

@@ -1,0 +1,17 @@
+.container {
+  border: pink solid 5px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.item {
+  border: solid black;
+  width: 47%;
+}
+
+.item1 {
+  width: 100%;
+}
