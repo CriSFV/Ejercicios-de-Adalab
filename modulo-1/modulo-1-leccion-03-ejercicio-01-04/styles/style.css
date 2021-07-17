@@ -1,0 +1,22 @@
+body {
+  font-size: 18px;
+  font-family: tahoma;
+  color: rebeccapurple;
+  background-color: mediumpurple;
+  line-height: 1.5;
+}
+p span {
+  height: 150px; /*le estoy dando altura y anchura al span que esta dentro del p, que es lo que contiene la primera imagen*/
+  width: 150px;
+  float: left; /* la imagen no es rodeada por los parrafos, si no se le añade esta propiedad*/
+}
+img {
+  /*la propiedad se le da directamente a la imagen*/
+  height: 100px;
+  width: 100px;
+}
+.durmiendo {
+  /*ex 4: como la clase es mas especifica, toma estas medidas para la segunda imagen*/
+  height: 200px;
+  width: 200px;
+}

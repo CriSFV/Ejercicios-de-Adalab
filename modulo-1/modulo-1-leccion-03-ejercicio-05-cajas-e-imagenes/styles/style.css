@@ -1,0 +1,12 @@
+.gatis {
+  width: 100px;
+  height: 100px;
+  background-color: darkkhaki;
+}
+img {
+  width: 100px;
+  height: 100px;
+  padding: 10px; /*solo con esto se mueve el padding pero no cambia de tamaño*/
+  border: 5px;
+  box-sizing: border-box; /*se centra la imagen en el contenedor porque en sus medidas se añaden padding y border*/
+}
