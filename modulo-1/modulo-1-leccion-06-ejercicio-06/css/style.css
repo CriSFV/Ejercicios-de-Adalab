@@ -1,8 +1,44 @@
-@media all and (min-width: 768px) {
-  .header {
-  font-size: 28px;
+body {
+  margin-left: 20px;
+  margin-right: 20px;
 }
-.texto{
+.title {
+  font-weight: bold;
+  font-size: 32px;
+}
+.texto {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media all and (min-width: 768px) {
+  body {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .texto {
     font-size: 16px;
     line-height: 20px;
+  }
 }
+
+@media all and (min-width: 1140px) {
+  body {
+    margin-top: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px;
+  }
+  .title {
+    font-size: 42px;
+  }
+  .texto {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+/* @media all and (min-width: 768px)  */
