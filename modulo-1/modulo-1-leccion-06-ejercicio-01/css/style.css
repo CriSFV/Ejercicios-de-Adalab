@@ -1,5 +1,5 @@
 html {
-  font-size: 32px; /*para que mida 50x50, pongo la mitad porque 6.25rem son 100px. Para que mida 200px pondré el doble de 16px*/
+  font-size: 8px; /*para que mida 50x50, pongo la mitad porque 6.25rem son 100px. Para que mida 200px pondré el doble de 16px*/
 }
 .smiley {
   width: 6.25rem; /*para pasar a unidad rem 100px/16px=6.25rem*/

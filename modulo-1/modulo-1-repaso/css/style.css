@@ -1,5 +1,14 @@
+/*
+Antes de style podemo poner elreset o añadirlo en file aparte
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+*/
 /*mobile*/
 .container {
+  /*para que este centrado en el centro de la pagina tengo que darle al main el alto total de la pagina*/
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -8,6 +17,12 @@
   background-color: white;
 }
 
+/* como a toda la pagina esta centrada, tiene la misma fuente y el mismo color, se pueden poner esas propiedades al body (ya que son propiedades que se heredan: 
+body{
+  font-family
+  color
+  tex-aling } 
+  Y estaría mejor si se pone con variables*/
 .codigo {
   color: #cc212a;
   font-weight: bold;
@@ -17,30 +32,41 @@
 }
 
 .footer {
+  /*para que no se salga de la pagina, una de las soluciones es ponerlo fijo*/
   border-top: solid 2px #cc212a;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  margin-left: 175px;
-  margin-right: 175px;
+  font-family: "Montserrat", sans-serif;
+  position: fixed;
+  bottom: 0px;
+  left: 0px; /*también valdría poner el width:100vw;*/
+  right: 0px;
 }
 .punto {
   height: 50px;
   width: 50px;
   background-color: #cc212a;
-  line-height: 50px;
+  line-height: 50px; /*igual que el alto de la caja (es para centrar la R de manera vertical (es el interlineado)*/
   text-align: center;
   font-weight: bold;
   font-size: 25px;
   color: white;
-  border-radius: 50%;
+  border-radius: 25px; /*es la mitad de lo que mide (en mi caso mide 50px). podemos hacer también calc(50px/2)*/
   transform: translate(0, -25px);
+  font-family: "Montserrat", sans-serif;
+  /*al ser solo texto, también se podría hacer con: 
+  display:flex: ;
+  justify-content: center;
+  align-items: center;
+  */
 }
 
 .marca {
   color: grey;
+  text-transform: uppercase;
 }
 
 /*Tablet*/
@@ -48,9 +74,13 @@
   .footer {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    position: fixed;
+    bottom: 0px;
+    left: 20px;
+    right: 20px;
   }
   .punto {
     height: 50px;
