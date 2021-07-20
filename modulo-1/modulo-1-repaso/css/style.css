@@ -5,9 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
   background-color: white;
-  border-bottom: solid 2px #cc212a;
 }
 
 .codigo {
@@ -19,12 +17,14 @@
 }
 
 .footer {
+  border-top: solid 2px #cc212a;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   flex-wrap: wrap;
   align-items: center;
+  margin-left: 175px;
+  margin-right: 175px;
 }
 .punto {
   height: 50px;
