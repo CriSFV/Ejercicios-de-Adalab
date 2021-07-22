@@ -1,8 +1,46 @@
 /*Mobile*/
+
 body {
+  background-color: lightgray;
+  margin: 0px;
+}
+.todo {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  font-weight: bold;
+  background-color: lightgray;
+  margin-top: 0;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: greenyellow;
+}
+.amarillo {
+  background-color: yellow;
+  margin-top: 0;
+}
+.texto {
+  margin-top: 20px;
+}
+.footer {
   background-color: grey;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-/*Tablet*/
+/*Tablet: pdte terminar*/
+
+@media all and (min-width: 540px) and (max-width: 1000px) {
+  .todo {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    position: absolute;
+  }
+}
 
 /*Desktop*/
