@@ -1,5 +1,21 @@
-.page__header {
+.header {
+  background-color: black;
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+}
+
+.logo {
+  height: 40px;
+  padding: 20px;
 }
