@@ -1,0 +1,4 @@
+http://127.0.0.1:5500/index.html?name=Pepito&lastname=Alvarez&email=pepito%40alvarez&pass=987456#
+
+Estos son los datos que se envian. En el primer caso, pueden ver la contraseña. Para quitarlo, hay que cambiar la forma de envío del formulario. Para ello hay que cambiar el method del form.
+Poniendo Form method post, todos los datos se encriptan y no se ven en el navegador

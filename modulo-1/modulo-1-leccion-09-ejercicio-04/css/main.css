@@ -1,0 +1,20 @@
+.container {
+  font-size: 24px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  color: red;
+  padding: 10px;
+}
+.input::placeholder {
+  color: blue;
+}
+/* Esta opción es para poner el placeholder en color. tiene que ser con los ::, si solo se pone uno pinta el fondo */
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+}

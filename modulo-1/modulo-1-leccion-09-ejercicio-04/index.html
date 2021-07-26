@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form class="container" action="#" method="post">
+        <label for="name">Nombre</label>
+        <!--si queremos que se desactive un valor, indicamos disabled y si queremos que aparezca un valor lo ponemos en el value-->
+        <input
+          id="name"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Ej: Yanelis"
+          value="Cris"
+          disabled
+        />
+        <!--para poner estilo bloque y que no ocupe el 100vw es mejor ponerlo dentro de la etiqueta label ya que labes es un elemento de bloque-->
+        <label
+          >Apellido
+          <input
+            class="input"
+            id="lastname"
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Ej: Serrano"
+          />
+        </label>
+        <label>
+          Email:
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Ej yanelis@gmail.com"
+            required
+          />
+        </label>
+        <label>
+          password:
+          <input
+            type="password"
+            name="pass"
+            id="pass"
+            placeholder="Ej 1234"
+            required
+          />
+        </label>
+
+        <fieldset class="fieldset">
+          <legend>VAmos a ver si sale</legend>
+          Color preferido:
+          <label>
+            <!--el name tiene que ser el mismo para que sepa que es el mismo cuestionario-->
+            <input type="checkbox" name="color" value="red" />
+            Rojo
+          </label>
+          <label>
+            <input type="checkbox" name="color" value="red" />
+            Verde
+          </label>
+          <label>
+            <input type="checkbox" name="color" value="red" />
+            Azul
+          </label>
+
+          <!-- como los name los agrupa como si fuera el mismo cuestionario. Si hacemos
+        otro después tenemos que cambiar el name que es con el valor por el que los va a agrupar para enviarlos al back-end -->
+
+          <label>
+            Sexo:
+            <input type="radio" name="genero" value="mujer" /> Mujer
+            <label>
+              <input type="radio" name="genero" value="hombre" />
+              Hombre
+            </label>
+            <label>
+              <input type="radio" name="genero" value="nqd" /> No quiero decirlo
+            </label>
+          
+        </fieldset>
+
+        <label>
+          <input type="submit" value="Terminado" />
+        </label>
+
+        <fieldset>
+          <label>
+            Edad:
+            <select name="age" id="age">
+              <option selected disabled>Escoge una opcion</option>
+              <!--cuando ponemos selected=indica que sea la seleccionada por defecto, pero que cuando elijas otra se desactive y no se pueda seleccionar-->
+              <option value="1">1-10</option>
+              <option value="2">11-20</option>
+              <option value="3">21-30</option>
+              <option value="4">31-40</option>
+              <option value="5">41-50</option>
+              <!-- Lo que se envia es el valor del value -->
+            </select>
+          </label>
+        </fieldset>
+        <label> Cumple <input type="date" name="birday" /> </label>
+      </form>
+    </main>
+  </body>
+</html>
