@@ -1,0 +1,42 @@
+* {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/*me faltaba poner el display grid*/
+.all {
+  display: grid;
+  grid-template-rows: 2fr 6fr 2fr; /*queremos 3 rows*/
+  grid-template-columns: repeat(12, 1fr);
+  /*poniendo esto, no hace falta poner 12 columnas con 1fr*/
+  border: rebeccapurple 2px solid;
+  height: 100vh;
+}
+/* poniendo repeat (12,1fr) te hará 12 columnas con 1 espacio cada una y la rellenará con los elementos que tengas*/
+.header {
+  border: black 2px solid;
+  background-color: aliceblue;
+  grid-column: 1/13;
+}
+.main {
+  grid-column: 1/13;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(12, 1fr);
+}
+.section {
+  border: black 2px solid;
+  background-color: pink;
+  grid-column: 1/7;
+}
+.section2 {
+  border: black 2px solid;
+  background-color: aquamarine;
+  grid-column: span 6;
+}
+.footer {
+  border: black 2px solid;
+  background-color: blueviolet;
+
+  grid-column: span 12;
+}

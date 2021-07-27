@@ -1,0 +1,22 @@
+* {
+  text-transform: uppercase;
+  margin: 0px;
+}
+.header {
+  background-color: aqua;
+  height: 20vh;
+}
+
+.section {
+  background-color: rgb(29, 216, 138);
+  height: 60vh;
+}
+.section2 {
+  background-color: cadetblue;
+  height: 60vh;
+}
+
+.footer {
+  background-color: chocolate;
+  height: 20vh;
+}
