@@ -1,0 +1,9 @@
+.popup {
+  border: rebeccapurple 2px solid;
+  width: 100px;
+  height: 100px;
+}
+.popup:hover {
+  transform: translate(60px, 80px);
+  transition: transform ease 2s;
+}
