@@ -1,0 +1,78 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px;
+}
+.transition {
+  width: 300px;
+  border: dotted 5px blue;
+  font-size: 50px;
+  /*la transicion la hacemos aqui, que es donde queremos que se vea*/
+  transition-property: transform; /*donde se aplica*/
+  transition-duration: 2s; /*tiempo de transición*/
+  -o-transition-delay: 0.5s; /*tiempo que tarda en empezar*/
+  transition-timing-function: linear; /*para poner funcion de tiempo*/
+}
+.transition:hover {
+  transform: scale(2);
+  color: red;
+}
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+.menu-item {
+  margin: 1ch;
+  transition: 1s;
+}
+.menu-item:hover {
+  transform: scale(2);
+}
+
+.popup {
+  /* display: none; sería para que aparezca de oculto*/
+  width: 20vh;
+  border: double 5px green;
+  height: 10vh;
+  text-align: center;
+  line-height: 10vh;
+}
+/*quiero que el popup aparezca al hacer click en cualquier parte del body, queriendo que aparezca desde abajo hacia arriba*/
+.popup {
+  position: fixed;
+  left: 10%;
+  transform: translateY(500px);
+}
+body:hover .popup {
+  transform: translateY(0);
+  transition: transform 2s;
+}
+
+/*Animación (se declara antes de utilizarla)*/
+@keyframes changeColor {
+  from {
+    background-color: palegreen;
+    transform: rotateZ(0);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  to {
+    background-color: orchid;
+    transform: rotateZ(360deg);
+  }
+}
+
+.box {
+  width: 200px;
+  height: 300px;
+  border: solid 2px orangered;
+  background-color: palegreen;
+  /* animation: changeColor 2s infinite; */
+}
+/*si quiero que se active cuando me paro en la caja*/
+.box:hover {
+  animation: changeColor 2s linear infinite;
+}
