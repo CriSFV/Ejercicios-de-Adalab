@@ -1,0 +1,23 @@
+- [] Diagrama de flujo (esquema)
+- [x] Hacer la estructura del HTML, css minimo para trabajar
+- [] Pintar una paleta
+  - [x] Seleccionar los elementos del HTML donde voy a pintar la paleta
+  - [x] Hacer peticion al servidor FETCH
+  - [x] Parsear los datos del servidor .json()
+  - [x] guardar en una variable global y
+  - [x] pintar en el HTML los datos
+  - [x] ponerlo bonito
+- [x] Pintar muchas paletas
+- [] Seleccionar paletas favorita
+  - [x] Escuchar evento sobre CLICK sobre las paletas
+  - [x] Crear una funcion manejadora del evento
+  - [x] Identificar la paleta clicada
+  - [] Añadir a un array de favorito la paleta clicada
+  - [] añadir o quitar la clase en el HTML de las paletas clicadas
+- [] Localstorage
+- [] Filtrar por nombre
+  - [] Definir el input del buscador
+  - [] Escuchar un evento sobre el input,
+  - [] Recoger el value del input
+  - [] filtrar
+  - [] pintar html los datos filtrados
