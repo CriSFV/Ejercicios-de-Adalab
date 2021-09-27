@@ -1,0 +1,24 @@
+@import './Variables';
+/*mobile*/
+
+.principal {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13px;
+  &__text {
+    color: var(--texto-color);
+    font-size: 30px;
+    width: 10ch;
+    text-transform: capitalize;
+    text-align: center;
+    @media all and (min-width: 768px) {
+      font-size: 40px;
+    }
+  }
+}

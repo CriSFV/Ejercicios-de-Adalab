@@ -1,3 +1,4 @@
+import '../styles/Header.scss';
 import logo from '../images/logo-adalab.jpg';
 import Li from './Link';
 const Header = () => {
