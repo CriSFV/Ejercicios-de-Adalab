@@ -1,4 +1,5 @@
 import logo from '../images/logo-adalab.jpg';
+import Li from './Link';
 const Header = () => {
   return (
     <div>
@@ -8,26 +9,7 @@ const Header = () => {
         </a>
         <nav>
           <ul className='menu'>
-            <li className='menu__line'>
-              <a
-                className='link'
-                href='https://adalab.es/blog/'
-                rel='noreferrer'
-                target='_BLANK'
-              >
-                Blog
-              </a>
-            </li>
-            <li className='menu__line'>
-              <a
-                className='link'
-                href='https://adalab.es/contacto/'
-                rel='noreferrer'
-                target='_BLANK'
-              >
-                Contacto
-              </a>
-            </li>
+            <Li className='menu__line' />
           </ul>
         </nav>
       </header>

@@ -23,8 +23,8 @@
 .menu {
   display: flex;
   margin-bottom: 13px;
+  list-style-type: none;
   &__line {
-    list-style-type: none;
     padding: 10px;
   }
 }
