@@ -1,0 +1,12 @@
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 5px;
+  &__link {
+    padding: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: gray;
+  }
+}

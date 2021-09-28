@@ -1,0 +1,16 @@
+.title {
+  font-size: 50px;
+  &__link {
+    padding: 5px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: black;
+  }
+}
+
+.manzanas {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
