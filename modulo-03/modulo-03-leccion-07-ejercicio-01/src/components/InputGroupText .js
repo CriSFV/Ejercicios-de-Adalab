@@ -1,6 +1,6 @@
 const InputGroupText = (props) => {
-  const handleInputName = (ev) => {
-    props.handleChange(ev.target.value);
+  const handleChangeInput = (ev) => {
+    props.handleChange(ev);
   };
   return (
     <div className='input-group-text'>
@@ -8,13 +8,13 @@ const InputGroupText = (props) => {
         {props.labelText}
       </label>
       <input
-        className={props.className} // ClassName y type se suele poner directamente
-        type={props.type}
+        className='input-text'
+        type='text'
         name={props.inputName}
         id={props.inputId}
-        placeholder={props.inputPlaceholder}
+        placeholder={props.inputPlaceHolder}
         value={props.inputValue}
-        onChange={handleInputName}
+        onChange={handleChangeInput}
       />
     </div>
   );
